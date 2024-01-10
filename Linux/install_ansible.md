@@ -14,12 +14,22 @@
 ```bash
 # Validar el Sistema Operativo
 cat /etc/redhat-release
+```
+```bash
 # Validar que la subcripción developer cuente con el repositorio para ansible
 subscription-manager repos --list | grep -A +1 -B +2 -E -e "ansible-automation.*\/[[:digit:]]\.[[:digit:]]/os"
-# Instalar la versión de su preferencia, en nuestro caso se validara que versión es la disponible
+```
+![ansible_01](./img/ansible_01_cc.png)
+```bash
+# Instalar la versión de su preferencia, en nuestro caso se valida que versión es la disponible es la 2.4
 subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
+
 # Verificar que versión de ansible esta disponible repositorios appstream y ansible
 yum info ansible-core
+```
+![ansible_02](./img/ansible_02_cc.png)
+
+```bash
 # Instalar el paquete requerido en mi caso tengo 2 de los repositorios mencionados, voy a instalar el más actual
 yum install ansible-core-2.15.8
 # Verificar la instalación
