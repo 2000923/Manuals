@@ -7,6 +7,10 @@
 - [SuSe](www.suse.com)
   - Sles 15.3
 
+### Fecha de desarrollo del proyecto
+
+miércoles 10 de febrero del 2024
+
 ### Procedimiento de instalación
 
 - RedHat
@@ -15,18 +19,22 @@
 # Validar el Sistema Operativo
 cat /etc/redhat-release
 ```
+
 ```bash
 # Validar que la subcripción developer cuente con el repositorio para ansible
 subscription-manager repos --list | grep -A +1 -B +2 -E -e "ansible-automation.*\/[[:digit:]]\.[[:digit:]]/os"
 ```
+
 ![ansible_01](./img/ansible_01_cc.png)
+
 ```bash
-# Instalar la versión de su preferencia, en nuestro caso se valida que versión es la disponible es la 2.4
+# Instalar la versión de su preferencia, en nuestro caso la disponible es la 2.4
 subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
 
 # Verificar que versión de ansible esta disponible repositorios appstream y ansible
 yum info ansible-core
 ```
+
 ![ansible_02](./img/ansible_02_cc.png)
 
 ```bash
@@ -43,6 +51,10 @@ ansible -v
 ```bash
 # Realizar una copia de seguridad o backup
 cp /etc/ansible/ansible.cfg{,.bkp}
+```
+
+```bash
+# Añadir las opciones de configuración a tu archivo de configuración
 cat > /etc/ansible/ansible.cfg<EOF
 [defaults]
 # configura si se debe verificar las claves de host ssh
