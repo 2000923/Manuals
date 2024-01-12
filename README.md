@@ -2,12 +2,11 @@
 
 ## Descripción
 
-Proyecto de recopilación de manuales generados de manera libre y autentica por el autor, aquí encontraras procedimientos para
-Linux, Automation, etc.
+Proyecto de recopilación de manuales generados de manera libre y autentica por el autor, aquí encontraras procedimientos para GNU/Linux, Automation, etc.
 
 ## Licencia del Código (GPL-3.0)
 
-El código fuente de este proyecto está bajo la Licencia Pública General de GNU (GPL-3.0). Puedes encontrar los detalles en el archivo [LICENSE](LICENSE).
+El código fuente de este proyecto está bajo la [Licencia Pública General de GNU (GPL) v3.0](https://www.gnu.org/licenses/gpl-3.0.html). Consulta el archivo `LICENSE` para más detalles.
 
 ## Documentación y Recursos Multimedia
 
@@ -15,7 +14,7 @@ La documentación y otros recursos multimedia (imágenes, videos, etc.) están b
 
 ### Detalles de la Licencia
 
-Consulta el archivo [LICENSE-CC-BY-NC](LICENSE-CC-BY-NC) para obtener los detalles completos de la licencia Creative Commons BY-NC 4.0.
+Consulta el archivo [LICENSE-CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed.es) para obtener los detalles completos de la licencia Creative Commons BY-NC 4.0.
 
 ## Contribuciones
 
