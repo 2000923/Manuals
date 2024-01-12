@@ -2,9 +2,9 @@
 
 ## Alcanse de la instalación
 
-- [Redhat](www.redhat.com)
+- [Redhat](https://www.redhat.com)
   - RedHat 9.3
-- [SuSe](www.suse.com)
+- [SuSe](https://www.suse.com)
   - Sles 15.3
 
 ## Fecha de desarrollo del proyecto
@@ -13,7 +13,7 @@
 
 ## Procedimiento de instalación
 
-### RedHat
+### . RedHat Family
 
 ```bash
 # Validar el Sistema Operativo
@@ -44,7 +44,7 @@ yum install ansible-core-2.15.8
 ansible -v
 ```
 
-### SuSe
+### . SuSe Family
 ```bash
 # Validar el Sistema Operativo
 cat /etc/os-release
@@ -66,17 +66,12 @@ Para instalar ansible se debe ubicar el respositorio, ir a su manager suscriptio
  Ubicado se accede al mismo para ver el procedimiento de instalación.
 
 ![ansible_05](./img/ansible_05_scc.png)
-
-```bash
-# Ubicado el modulo se procede a añadirlo
-SUSEConnect -p PackageHub/15.3/x86_64
-```
 ```bash
 #Se refresca el repositorio
 zypper refresh
 ```
 ```bash
-#Se verifica que version de ansible tenemos disponible
+#Se verifica que version de ansible que tenemos disponible
 zypper info ansible
 ```
 ```bash
@@ -87,6 +82,7 @@ zypper install ansible
 
 - RedHat
 - SuSe
+- Debian
 
 ```bash
 # Realizar una copia de seguridad o backup
